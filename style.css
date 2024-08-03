@@ -1,0 +1,387 @@
+*{
+    margin: 0px;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --x: rgb(255, 255, 255);
+    --y:rgb(85, 83, 83);
+    --z:rgb(33, 147, 223);
+    --v:rgba(221, 226, 230, 0.507);
+}
+.navbar-brand h1{
+    font-family: "Bodoni Moda SC", serif;
+    font-weight: 700;
+    text-shadow: 0px 0px 3px ;
+    color: var(--x);   
+}
+#logo{
+    height: 65px;
+    width: 440px;
+    border: 5px solid var(--x);
+    padding: 5px 8px;
+    border-radius: 25px;
+}
+@media (max-width:600px) {
+    #logo{
+        height: 55px;
+        width: 200px;
+        border: 5px solid var(--x);
+        padding: 5px 8px;
+        border-radius: 25px;
+    } 
+    #logo h1{
+        font-size: 17px;
+        margin-top: 5%;
+    }     
+}
+
+#main{
+    min-height: 98vh;
+    min-width: 100%;
+    background-image: url(./images/background8.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    
+}
+
+.collapse a:hover{
+    color: var(--y);
+    text-shadow: 0px 0px 3px;
+}
+.collapse .btn:hover{
+    color: var(--v);
+}
+.collapse a{
+    color: var(--x);
+    font-weight: 600;
+}
+#heading{
+    padding-top: 22%;
+    padding-left: 1%;
+    color: var(--x);
+    text-align: center;
+}
+@media (max-width:600px) {
+    #heading p{
+        margin-top: 37%;
+        padding: 10%;
+    }
+}
+#heading p{
+    font-size: 20px;
+}
+@media (max-width:600px) {
+    #heading p{
+        font-size: 19px;
+    }
+}
+#heading span{
+    font-size: 100px;
+    font-family: "Allura", cursive;
+    text-shadow: 2px 2px 3px;
+}
+@media (max-width:600px) {
+    #heading span{
+        font-size: 60px;
+    }
+}
+
+
+
+
+/* section 2- welcome section */
+#welcome{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./images/bg2.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+@media (max-width:600px) {
+    #welcome{
+        padding-top: 10%;
+        margin-bottom: 35%;
+        /* height: 100vh; */  
+    }
+}
+.heading2{
+    padding: 8% 5% 5% 6%;
+}
+.heading2 h1{
+    font-family:"Bona Nova SC",serif;
+    font-weight: 600;
+    color: rgb(88, 85, 85);
+}
+
+.quote h1{
+    font-family: "Nothing You Could Do", cursive;
+    color: var(--z);
+    font-size: 45px;
+}
+.quote a{
+    text-decoration: none;
+    color: var(--x);
+    background-color: rgb(77, 141, 184);
+    height: 50px;
+    width: 300px;
+    padding: 6px 7px;
+    text-align: center;
+    margin-left: 45%;
+    border-radius: 10px;
+    margin-top: 4%;
+    font-size: 20px;
+}
+.quote a:hover{
+    background-color:rgb(58, 107, 139);
+}
+
+
+
+
+
+/* section 3- services */
+#services{
+    height: 100vh;
+    width: 100%;
+    padding: 7% 2%;
+    background-color: rgb(152, 188, 212);
+}
+@media (max-width:600px) {
+    #services{
+        height: 275vh;
+    }
+}
+.heading3{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.heading3 h1{
+    font-family:"Bona Nova SC",serif;
+    font-weight: 600;
+    font-size: 40px;
+}
+#services .btn{
+    background-color: var(--v);
+}
+.card{
+    box-shadow: 0px 0px 5px 2px rgb(175, 173, 173);
+}
+.card:hover{
+        /* transform: scale(1.10);
+        transition: 1s; */
+        cursor: pointer;  
+        animation: zoom 1s;
+        box-shadow: 0px 0px 10px 6px rgb(168, 165, 165);
+
+    }
+    @keyframes zoom {
+        0%{
+            /* transform: scale(1) */
+            transform:  translateY(-1px);
+        }
+        50%{
+            /* transform: scale(1.20) */
+            transform:  translateY(-15px);
+        }
+        100%{
+            /* transform: scale(1) */
+            transform:  translateY(-1px);
+        }
+    }
+
+
+
+
+
+/* section - booking */
+#booking{
+    height: 90vh;
+    width: 100%;
+    background-color: var(--v);
+    padding: 6% 0%;
+}
+#booking h3{
+    font-family: "Nothing You Could Do", cursive;
+    color: rgb(86, 122, 146);;
+    font-size: 35px;
+    text-align: center;
+}
+#booking .form-control{
+    width: 450px;
+}
+#booking h6{
+    color: rgb(76, 97, 110);
+}
+@media (max-width:600px) {
+    #booking .form-control{
+        width: 300px
+        }
+    #booking h6{
+        margin-top: 7%;
+    }
+    #booking{
+        padding-top: 25% ;
+        height: 100vh;
+    }
+}
+#booking button{
+    background-color: gray;
+}
+#booking button:hover{
+    cursor: pointer;
+    background-color: rgb(97, 90, 90);
+}
+/* .box{
+    border: 1px solid rgb(241, 236, 236);
+    box-shadow: 0px 0px 5px 0px rgb(192, 192, 192);
+    border-radius: 50px;
+} */
+
+
+
+
+
+/* section 4- about */
+#about{
+    width: 100%;
+    height: 100vh;
+    padding: 5% 0%;
+    background-image: url(./images/bg2.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+ #about span{
+    font-family: "Nothing You Could Do", cursive;
+    font-size: 50px;
+    color: var(--z);
+ }
+ #about .bt:hover{
+    background-color: rgb(98, 125, 143);
+ }
+ @media (max-width:600px) {
+    #about{
+        height: 190vh;
+    }
+    #about span{
+        margin-left: 20%;
+        font-size: 41px;
+    }
+    #about .bt{
+        margin-left: 15%;
+    }
+ }
+#about button{
+    background-color: rgba(67, 147, 172, 0.856);
+}
+
+#about h1 {
+    color: var(--y);
+    font-family:"Bona Nova SC",serif;
+    font-weight: 600;
+}
+#about p {
+    text-align: justify;
+}
+
+#abImg {
+    width: 95%;
+    height: 490px;
+    padding-top: 15%;
+    padding-left: 15%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(./images/photo-1469474968028-56623f02e42e.avif);
+}
+
+
+
+
+/*section- carousel */
+
+#carousel{
+    width: 100%;
+    height: 90vh;
+}
+#carousel img{
+    height: 800px;
+}
+@media (max-width:600px) {
+    #carousel img{
+        height: 400px;
+    }
+    #carousel{
+        height: 65vh;
+    }
+}
+
+
+
+
+/* section- blog */
+
+#blog{
+    width: 100%;
+    height: 100vh;
+    padding: 7% 2%;
+}
+@media (max-width:600px) {
+    #blog{
+        height: 180vh;
+    }
+}
+#blog h1{
+    font-family:"Bona Nova SC",serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: var(--y);
+}
+#hr {
+    height: 0.5rem;
+    width: 18rem;
+    background-color: var(--y);
+}
+
+
+
+
+/* faqs */
+#faqs{
+    height: 70vh;
+    width: 100%;
+    background-image: url(./images/bg2.avif);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 7%;
+}
+#faqs h1{
+    font-family:"Bona Nova SC",serif;
+    font-weight: 600;
+    font-size: 40px;
+    text-align: center;
+    color: var(--y);
+}
+
+
+
+
+/* contact */
+#contact{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(78, 95, 105);
+}
+@media (max-width:600px) {
+    #contact{
+        height: 125vh;
+    }
+}
+#contact a{
+    text-decoration: none;
+}
